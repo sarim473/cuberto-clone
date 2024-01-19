@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "arial";
+}
+
+*::selection{
+background-color: black;
+color: white;
+}
+html {
+    /* changing the root font size of 1rem = 16px to 1rem = 10px */
+    /* now the 1rem = 10px */
+    font-size: 62.5%;
+
+    /* use rem for responsive typography don't use px */
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+a,
+img,
+ul,
+li,
+input,
+textarea,
+video,
+button,
+select {
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ==================================================================================================================================== */
+/* ==================================================Start the code from here ========================================================= */
+
+#main {
+    width: 100%;
+}
+
+#main #home {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#main #home #nav {
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main #home #nav>img {
+    width: 100px;
+}
+
+#main #home #right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#main #home #right>a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+}
+
+#main #home #right>i {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: #000;
+}
+
+
+/* hero section  */
+#main #home #hero {
+    /* background-color: red; */
+    width: 100%;
+    padding: 20rem 19rem;
+}
+
+#main #home #hero>h5 {
+    font-size: 1.9rem;
+    color: black;
+    text-transform: capitalize;
+}
+
+#main #home #hero .hero-headings {
+    display: flex;
+    gap: 40px;
+}
+
+#main #home #hero .hero-headings>h1 {
+    font-size: 6vw;
+    font-weight: 900;
+    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 2px;
+}
+
+#main #home #hero-bottom {
+    padding: 3rem 19rem;
+}
+
+#main #home #hero-bottom>p {
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+#main #home #hero-bottom>p::selection {
+    color: white;
+    background-color: black;
+}
+
+/* end  */
+
+/* featured  */
+#featured {
+    padding: 15rem 19rem;
+    margin-bottom: 10vw;
+
+}
+
+#featured .f-heading{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#featured .f-heading:nth-child(2){
+    font-size: 4rem;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+#fimages {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5vw;
+}
+
+#fleft {
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+    /* background-color: blue; */
+}
+
+.fleftelm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+    /* background-color: red; */
+}
+
+.fleftelm h1 {
+    font-size: 2.5vw;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+}
+
+.fleftelm h3 {
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+.fleftelm h4 {
+    opacity: .5;
+    font-weight: 500;
+}
+
+#fright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+}
+
+#fright .images {
+    width: 90%;
+    height: 90%;
+    background-color: red;
+
+}
+
+#fright .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#featured .btndiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+.btndiv > button{
+    padding: 2rem 3rem;
+    border: 2px solid grey;
+    border-radius: 100px;
+    background-color: white;
+    font-size: 1.9rem;
+
+}
+
+.btndiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.btndiv > button{
+    padding: 2rem 3rem;
+    border: 2px solid grey;
+    border-radius: 100px;
+    background-color: white;
+    font-size: 1.9rem;
+
+}
+/* end  */
+
+/* developer */
+#dev{
+    width: 100%;
+    padding: 20rem 19rem;
+}
+
+#dev > h1{
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+#dev > p{
+    font-size: 2.1rem;
+    font-weight: 600;
+    width: 60%;
+}
+/* end */
+
+#slides{
+    padding: 15rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+}
+
+#slides .slide-item{
+   flex: 1 1 200px;
+}
+
+#slides .slide-item img{
+   object-fit: cover;
+}
+
+#slides .slide-item h5{
+   background-color: rgb(207, 207, 207);
+   width: fit-content;
+   padding: 13px 31px;
+   border-radius: 100px;
+   margin: 20px 0;
+   font-weight: 600;
+}
+
+#slides .slide-item h2{
+font-size: 2.1rem;
+font-size: 700;
+line-height: 1.5;
+}

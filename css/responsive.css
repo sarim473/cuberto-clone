@@ -1,0 +1,14 @@
+
+@media only screen and (max-width: 900px) {
+    html{
+        /* font size 55% = 8.8px */
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+        /* font size 45% = 7.2px  */
+    html{
+        font-size: 45%;
+    }
+}
